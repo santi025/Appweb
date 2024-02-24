@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario html</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form accept="#" method="post">
+
+        <div>
+            <label> primer nombre: </label>
+            <input type="text" 
+            name="primerNombre" 
+            maxlength="10" 
+            placeholder="Ingrese su primer nombre" 
+            value="Juan"
+            required
+            />
+        </div>
+        <br>
+        <div>
+            <label> Contraseña</label>
+            <input type="password" name="pwd"/>
+        </div>
+       <br> 
+        <div>
+            <label> Edad</label>
+            <input type="number" name="edad" min="1" max="120"/>
+        </div>
+        <br>
+        <div>
+            <label> Email</label>
+            <input type="email" name="email" placeholder="example@uniboyaca.edu.co"/>
+        </div>
+        <br>
+        <div>
+            <label> Archivo</label>
+            <input type="file" name="Archivo" multiple/>
+        </div>
+        <br>
+        <div>
+            <label> Color</label>
+            <input type="color" name="Color"/>
+        </div>
+        <br>
+        <div>
+            <label> Fecha</label>
+            <input type="date" name="Fecha"/>
+        </div>
+        <br>
+        <div>
+            <label> Fecha hora</label>
+            <input type="datetime-local" name="fechaHora"/>
+        </div>
+        <br>
+        <div>
+            <label> Ciudad</label>
+            <select name="Ciudad">
+                <option  value="">Seleccione una ciudad</option>
+                <option value="1">tunja</option>
+                <option value="2">Bogota</option>
+                <option value="3">Sogamoso</option>
+                <option value="4">cali</option>
+                <option value="5">Cartagena</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div>
+            <label> Estado Civil:</label>
+            <br>
+            <label>
+                <input type="radio" name="estado civil " value="a">
+                soltero/a
+            </label>
+            <label>
+                <input type="radio" name="estado civil2" value="b">
+                Casado
+            </label>
+            <label>
+                <input type="radio" name="estado civil3" value="c">
+                biudo
+            </label>
+            <label>
+                <input type="radio" name="estado civil4" value="d" checked>
+                Ninguno
+            </label>
+
+            
+        </div>
+        <br>
+        <div>
+            <label> pasatiempos </label>
+            <label>
+                <input type="checkbox"  name="deportes">
+                deportes
+            </label>
+            <label>
+                <input type="checkbox"  name="VideoJuegos">
+                VideoJuegos
+            </label>
+            <label>
+                <input type="checkbox"  name="Lectura" checked>
+                Lecturas
+            </label>
+        </div>
+        <br>
+        <div>
+            <label > Justifique</label>
+            <textarea name="Justifique" rows="10" cols="35">aaaaaaaaaaaaaaaaaaa</textarea>
+        </div>
+        <br>
+        <div>
+            <input type="button" value="boton">
+            <button disabled>boton</button>
+        </div>
+        <br>
+        <div>
+            <input type="button" value="limpiar">
+            <button  type="reset" >limpiar</button>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="enviar">
+            <button type="submit">enviar</button>
+        </div>
+        
+
+        
+
+    </form>
+</body>
+</html>
