@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    width: 120px;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+    display:grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 2fr 1fr 4fr 1fr;
+    grid-template-areas: "header header"
+    "from menu"
+    "body menu"
+    "footer menu";
+}
+
+.page .headerContent{
+    background-color: rgb(63, 33, 197);
+    grid-area: header;
+}
+.page  .menuContent{
+    background-color: rgb(1, 64, 238);
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.page.fromsearch{
+    background-color: rgb(28, 102, 102);
+    grid-area: from;
+}
+.page .bodyContent{
+    background-color: chocolate;
+    grid-area: body;
+}
+.page .footerContent{
+    background-color: burlywood;
+    grid-area: footer;
+}
+.btn{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    right: 11px;
+
+}
