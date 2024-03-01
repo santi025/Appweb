@@ -37,9 +37,40 @@ img{
     grid-area: from;
 }
 .page .bodyContent{
-    background-color: chocolate;
+    background-color: #d2691e;
     grid-area: body;
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
 }
+.bodyContent .tituloArticulo{
+    width:100%;
+    text-align: center;
+
+}
+.producto{
+    width: 250px;
+    border: 1px solid #000;
+    border-radius: 16px;
+    margin: 16px;
+    padding: 8px;
+
+}
+.producto .descripcion{
+    display: none;
+
+}
+.producto:hover{
+    border-color: blue;
+}
+.producto:hover .descripcion{
+    display: block;
+    border-color: blue;
+}
+
 .page .footerContent{
     background-color: burlywood;
     grid-area: footer;
@@ -48,8 +79,7 @@ img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     top: 0%;
-    right: 11px;
-
+    left: 0px;
 }
