@@ -79,3 +79,84 @@ if(m===12){
  * && and 
  * != diferente 
  */
+
+let categoria ="a";
+switch(categoria){
+    case "a":
+        console.log("categoria a");
+        break;
+    case "b":
+            console.log("categoria b");
+            break;
+    case "c":
+                console.log("categoria c");
+                break;
+    default:
+        console.log("sin definir");
+        break;
+
+}
+
+
+
+function sumar (a,b){
+
+    return a+b;
+}
+
+let resultado = sumar(2,4);
+function realizarsuma (a,b){
+    console.log(a+b);
+}
+realizarsuma(2,6);
+const sumar2= function(a,b){
+        return a+b;
+ }
+ console.log(sumar2(5,9));
+ function esmayordeedad(edad){
+    if (edad<18){
+        return "es menor de edad";
+    }else{
+        return"es mayor de edad";
+    }
+
+ }
+
+
+ class Estudiante {
+     nombre=" ";
+     edad=0;
+     email=" ";
+     codigo= " ";
+     constructor(nombre,edad,email,codigo){
+
+        this.nombre=nombre;
+        this.edad=edad;
+        this.email=email;
+        this.codigo=codigo;
+     }
+
+     esmayordeedad(){
+       /* if (this.edad < 18){
+            return "es menor de edad";
+        }else{
+            return"es mayor de edad";
+        }*/
+        return this.edad <18 
+        ?"es menor de edad"
+        : "es mayor de edad";
+     }
+
+ }
+
+ const estudiante =new Estudiante("pepe",17, "test@test.com","1234");
+ console.log(estudiante.nombre,estudiante.esmayordeedad());
+
+ class EstudianteSistemas extends Estudiante{
+    constructor(codigo){
+        super("ana",28,"test@test.com",codigo);
+    }
+ }
+ const sistemas =new EstudianteSistemas ("654321");
+console.log(sistemas.nombre,sistemas.esmayordeedad(),sistemas.codigo);
+
