@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavasScript</title>
+    <link rel="stylesheet" href="css/froms.css">
 </head>
 <body>
     <button onclick="mostrarMsg()">MENSAJE</button>
     <h1 id="tituloh1">titulo</h1>
+    <form name="saludarForm">
+        <input id="nombreInp" type="text" name="nombre" placeholder="ingrese su nombre">
+        <label id="nombreError" class="error"> Debe ingresar un nombre</label>
+        <label id="nombreLetrasError" class="error"> Debe ingresar solo letras </label>
+        <button id="saludarBtn" type="button">saludar</button> 
+
+    </form>
+    <p><!--mostar saludo--></p>
     <script>
         //alert('HOLA MUNDO')
         // comentar
@@ -20,6 +29,7 @@
     </script>
     <script src="js/index.js">   </script>
     <script src="js/arrays.js">   </script>
+    <script src="js/froms.js">    </script>
 
 </body>
 </html>
